@@ -1,0 +1,11 @@
+Jesus@DESKTOP-D4HHDVN MINGW64 ~
+$ docker run --name secret -it -d devopsdockeruh/exec_bash_exercise
+139bee4232b2f676c54173142c4dbb8885a1ee9b97103e8aec24b551a68036e7
+
+Jesus@DESKTOP-D4HHDVN MINGW64 ~
+$ docker exec -it secret bash
+root@139bee4232b2:/usr/app# tail -f ./logs.txt
+Wed, 15 Jul 2020 12:04:27 GMT
+Wed, 15 Jul 2020 12:04:30 GMT
+Secret message is:
+"Docker is easy"

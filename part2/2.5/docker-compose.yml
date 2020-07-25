@@ -1,0 +1,22 @@
+version: '3.5'  
+
+services: 
+    exercise_frontend: 
+        image: ownfrontend 
+        ports: 
+            - 5000:5000
+        environment:
+            - API_URL=http://localhost:8000
+        container_name: frontend
+    exercise_backend:
+        image: ownbackend
+        ports: 
+            - 8000:8000
+        environment:
+            - FRONT_URL=http://localhost:5000
+            - REDIS=redis
+            - REDIS_PORT=6379
+        container_name: backend
+    exercise_redis:
+        image: redis
+        container_name: redis

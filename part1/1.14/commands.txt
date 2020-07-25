@@ -1,0 +1,2 @@
+docker build -t ownrails .
+docker run --name myrailsapp -p 3000:3000 ownrails

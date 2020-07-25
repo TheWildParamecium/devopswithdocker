@@ -1,0 +1,6 @@
+Jesus@DESKTOP-D4HHDVN MINGW64 ~/Desktop/proyectosweb/docker_helsinki/devopswithdocker/part1/1.1 (master)
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+430a9c474b37        nginx               "/docker-entrypoint.…"   9 minutes ago       Up 9 minutes               80/tcp              wonderful_darwin
+8f8ddd7bb96d        nginx               "/docker-entrypoint.…"   9 minutes ago       Exited (0) 8 minutes ago                       fervent_sutherland
+b8639b8cd7d1        nginx               "/docker-entrypoint.…"   9 minutes ago       Exited (0) 8 minutes ago                       focused_taussig

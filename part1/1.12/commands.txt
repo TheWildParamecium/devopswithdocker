@@ -1,0 +1,2 @@
+docker run -d --name frontend -p 5000:5000 ownfrontend
+docker run -d --name backend -p 8000:8000 ownbackend
